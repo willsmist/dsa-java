@@ -10,7 +10,7 @@ out
 gen
 
 # Compiled class files
-*.class
+#*.class
 
 # Log files
 *.log
