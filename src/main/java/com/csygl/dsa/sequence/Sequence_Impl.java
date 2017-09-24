@@ -5,15 +5,11 @@ import java.util.Arrays;
 /**
  * Sequence 接口实现类
  */
-public class Sequence_Impl implements Sequence {
+public class Sequence_Impl<E> implements Sequence<E> {
 
-    private final Object[] s;
+    private final E[] s;
 
-    public Sequence_Impl() {
-        s = new Object[0];
-    }
-
-    public Sequence_Impl(Object[] objects) {
+    public Sequence_Impl(E[] objects) {
         s = Arrays.copyOf(objects, objects.length);
     }
 
@@ -34,7 +30,7 @@ public class Sequence_Impl implements Sequence {
      * @return 返回指定下标的元素
      */
     @Override
-    public Object getAtRank(int index) {
+    public E getAtRank(int index) {
         return s[index];
     }
 
@@ -45,7 +41,7 @@ public class Sequence_Impl implements Sequence {
      * @param obj   替换后的元素
      */
     @Override
-    public void replaceAtRank(int index, Object obj) {
+    public void replaceAtRank(int index, E obj) {
         s[index] = obj;
     }
 
@@ -57,8 +53,13 @@ public class Sequence_Impl implements Sequence {
      */
     @Override
     public void swapByRank(int p1, int p2) {
-        Object t = getAtRank(p1);
+        E t = getAtRank(p1);
         replaceAtRank(p1, getAtRank(p2));
         replaceAtRank(p2, t);
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(s);
     }
 }
