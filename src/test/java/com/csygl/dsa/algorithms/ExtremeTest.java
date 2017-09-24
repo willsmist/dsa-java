@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * com.csygl.dsa.algorithms.Extreme 测试类
- */
 public class ExtremeTest {
 
     @Test
