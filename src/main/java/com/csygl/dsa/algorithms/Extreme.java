@@ -1,7 +1,5 @@
 package com.csygl.dsa.algorithms;
 
-import java.util.Arrays;
-
 /**
  * 计算最值
  */
@@ -12,7 +10,7 @@ public class Extreme {
     private int minValue;
 
     public Extreme(int[] a) {
-        s = Arrays.copyOf(a, a.length);
+        s = a;
     }
 
     /**
@@ -22,7 +20,6 @@ public class Extreme {
      */
     public int max() {
         int maxValue = s[0];
-        int maxIndex = 0;
         for (int i = 1; i < s.length; i++) {
             if (maxValue < s[i]) {
                 maxValue = s[i];

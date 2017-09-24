@@ -6,7 +6,6 @@ import org.junit.Before;
 public class TestBase {
 
     private long startTime;
-    private long endTime;
 
     @Before
     public void before() {
@@ -15,7 +14,7 @@ public class TestBase {
 
     @After
     public void after() {
-        endTime = System.currentTimeMillis();
+        long endTime = System.currentTimeMillis();
         System.out.println("Time: " + (endTime - startTime) + " ms" );
     }
 }

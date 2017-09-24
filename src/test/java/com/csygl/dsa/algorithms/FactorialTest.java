@@ -6,10 +6,18 @@ import static org.junit.Assert.*;
 
 public class FactorialTest {
     @Test
-    public void fact() {
+    public void iterFact(){
         Factorial f = new Factorial();
-        assertEquals(120L, f.fact(5));
-        System.out.println(f.fact(50));
+        assertEquals(120L, f.iterFact(5));
+        System.out.println(f.iterFact(10));
+
+    }
+
+    @Test
+    public void recurFact() {
+        Factorial f = new Factorial();
+        assertEquals(120L, f.recurFact(5));
+        System.out.println(f.recurFact(10));
     }
 
 }
