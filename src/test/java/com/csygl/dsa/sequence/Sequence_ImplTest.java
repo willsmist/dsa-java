@@ -15,10 +15,10 @@ public class Sequence_ImplTest {
         System.out.println(s);
         System.out.println(s.getSize());
         System.out.println(s.getAtRank(1));
-        s.replaceAtRank(0,10);
+        s.replaceAtRank(0, 10);
         System.out.println(s);
         System.out.println(Arrays.toString(ints));
-        s.swapByRank(3,4);
+        s.swapByRank(3, 4);
         System.out.println(s);
     }
 

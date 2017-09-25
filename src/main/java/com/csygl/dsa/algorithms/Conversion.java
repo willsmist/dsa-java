@@ -31,7 +31,7 @@ public class Conversion {
      * 将任意指定进制数字转换为任意目标进制表示
      *
      * @param sourceBase 原数字所用进制的基
-     * @param sourceNum 指定进制表示的原数字，以 String 类型表示
+     * @param sourceNum  指定进制表示的原数字，以 String 类型表示
      * @param targetBase 目标进制的基
      * @return 返回目标进制表示的数字，以 String 类型表示
      */

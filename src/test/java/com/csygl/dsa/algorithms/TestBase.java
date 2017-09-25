@@ -15,6 +15,6 @@ public class TestBase {
     @After
     public void after() {
         long endTime = System.currentTimeMillis();
-        System.out.println("Time: " + (endTime - startTime) + " ms\n" );
+        System.out.println("Time: " + (endTime - startTime) + " ms\n");
     }
 }

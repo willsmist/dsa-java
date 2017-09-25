@@ -2,11 +2,11 @@ package com.csygl.dsa.algorithms;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class FactorialTest {
     @Test
-    public void iterFact(){
+    public void iterFact() {
         Factorial f = new Factorial();
         assertEquals(120L, f.iterFact(5));
         System.out.println(f.iterFact(10));

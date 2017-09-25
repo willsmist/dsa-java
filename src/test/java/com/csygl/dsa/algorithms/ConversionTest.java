@@ -12,7 +12,7 @@ public class ConversionTest {
         assertEquals("1111011", c.convert(123, 2));
         assertEquals("173", c.convert(123, 8));
         assertEquals("7B", c.convert(123, 16));
-        System.out.println(c.convert(123,3));
+        System.out.println(c.convert(123, 3));
     }
 
     @Test
@@ -22,7 +22,7 @@ public class ConversionTest {
         assertEquals("7B", c.convert(8, "173", 16));
 //        System.out.println(c.convert(3, "11120", 10));
         long start = System.currentTimeMillis();
-        System.out.println(c.convert(10,String.valueOf(Integer.MAX_VALUE),3));
+        System.out.println(c.convert(10, String.valueOf(Integer.MAX_VALUE), 3));
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }
@@ -31,7 +31,7 @@ public class ConversionTest {
     public void testConvertToDec() {
         Conversion c = new Conversion();
         assertEquals(123, c.convertToDec(2, "1111011"));
-        assertEquals(123, c.convertToDec(8,"173"));
-        assertEquals(123, c.convertToDec(16,"7B"));
+        assertEquals(123, c.convertToDec(8, "173"));
+        assertEquals(123, c.convertToDec(16, "7B"));
     }
 }

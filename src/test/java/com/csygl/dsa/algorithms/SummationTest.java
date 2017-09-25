@@ -5,8 +5,8 @@ import org.junit.Test;
 
 public class SummationTest {
 
-    private Summation s;
     private final int[] a = new int[]{1, 2, 3, 4, 5};
+    private Summation s;
 
     @Before
     public void before() {

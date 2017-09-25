@@ -27,7 +27,7 @@ public class SequenceUtil {
     /**
      * 生成随机无重复整数序列
      *
-     * @param limit 随机数字上限
+     * @param limit  随机数字上限
      * @param length 序列中元素个数
      * @return 返回随机无重复整数组成的数组
      */
@@ -51,6 +51,7 @@ public class SequenceUtil {
 
     /**
      * 反转序列
+     *
      * @param s 指定序列
      */
     public static void reverse(Sequence s) {
@@ -61,15 +62,17 @@ public class SequenceUtil {
 
     /**
      * 递归形式简洁调用
+     *
      * @param s 指定序列
      */
-    public static void reverseRecur(Sequence s){
+    public static void reverseRecur(Sequence s) {
         reverseRecur(s, 0, s.getSize() - 1);
     }
 
     /**
      * 递归实现反转序列
-     * @param s 指定序列
+     *
+     * @param s  指定序列
      * @param lo 子序列首元素下标
      * @param hi 子序列末元素下标
      */
@@ -83,20 +86,22 @@ public class SequenceUtil {
 
     /**
      * 迭代形式简洁调用
+     *
      * @param s 制定序列
      */
-    public static void reverseIter(Sequence s){
+    public static void reverseIter(Sequence s) {
         reverseIter(s, 0, s.getSize() - 1);
     }
 
     /**
      * 迭代实现反转序列
-     * @param s 指定序列
+     *
+     * @param s  指定序列
      * @param lo 子序列首元素下标
      * @param hi 子序列末元素下标
      */
-    public static void reverseIter(Sequence s, int lo, int hi){
-        while(lo < hi){
+    public static void reverseIter(Sequence s, int lo, int hi) {
+        while (lo < hi) {
             s.swapByRank(lo, hi);
             lo++;
             hi--;
@@ -105,10 +110,11 @@ public class SequenceUtil {
 
     /**
      * 借助 Stack 实现反转序列
+     *
      * @param s 指定序列
      */
     @SuppressWarnings("EmptyMethod")
-    public static void reverseByStack(Sequence s){
+    public static void reverseByStack(Sequence s) {
         //TODO
     }
 }

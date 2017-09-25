@@ -33,7 +33,7 @@ public class BubbleSorter implements Sorter {
 
     }
 
-    public void setComparator(Comparator comp){
+    public void setComparator(Comparator comp) {
         c = comp;
     }
 }

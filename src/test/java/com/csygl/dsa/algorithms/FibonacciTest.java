@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class FibonacciTest extends TestBase{
+public class FibonacciTest extends TestBase {
 
     @Test
     public void binaryFib() {
@@ -14,7 +14,7 @@ public class FibonacciTest extends TestBase{
     }
 
     @Test
-    public void linearFib(){
+    public void linearFib() {
         Fibonacci f = new Fibonacci();
         System.out.println(f.linearFib(45));
     }
@@ -26,7 +26,7 @@ public class FibonacciTest extends TestBase{
     }
 
     @Test
-    public void testBoundary(){
+    public void testBoundary() {
         Fibonacci f = new Fibonacci();
         // n = 0
         System.out.println(f.binaryFib(0));

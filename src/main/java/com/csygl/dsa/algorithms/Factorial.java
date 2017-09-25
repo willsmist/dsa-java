@@ -20,6 +20,7 @@ public class Factorial {
 
     /**
      * 迭代计算阶乘
+     *
      * @param n 正整数
      * @return 阶乘的结果
      */

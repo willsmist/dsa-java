@@ -7,6 +7,7 @@ public class Summation {
 
     /**
      * 一般求和
+     *
      * @param a 整数数组
      * @return 数组所有元素的和
      */
@@ -20,6 +21,7 @@ public class Summation {
 
     /**
      * 线性递归简洁调用
+     *
      * @param a 整数数组
      * @return 数组所有元素的和
      */
@@ -29,6 +31,7 @@ public class Summation {
 
     /**
      * 线性递归实现求和
+     *
      * @param a 整数数组
      * @param n 参与求和的元素个数
      * @return 数组所有元素的和
@@ -42,6 +45,7 @@ public class Summation {
 
     /**
      * 二分递归简洁调用
+     *
      * @param a 整数数组
      * @return 数组所有元素的和
      */
@@ -51,6 +55,7 @@ public class Summation {
 
     /**
      * 二分递归实现求和
+     *
      * @param a 整数数组
      * @param i 参与求和元素起始位置
      * @param n 参与求和元素个数

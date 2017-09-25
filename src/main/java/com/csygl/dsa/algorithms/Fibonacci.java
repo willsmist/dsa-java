@@ -5,6 +5,9 @@ package com.csygl.dsa.algorithms;
  */
 public class Fibonacci {
 
+    private int f;//当前 Fibonacci 数
+    private int p;//当前 Fibonacci 数的上一个数
+
     /**
      * 二分递归计算斐波那契数
      *
@@ -20,9 +23,6 @@ public class Fibonacci {
         }
         return binaryFib(n - 1) + binaryFib(n - 2);
     }
-
-    private int f;//当前 Fibonacci 数
-    private int p;//当前 Fibonacci 数的上一个数
 
     /**
      * 线性递归计算斐波那契数
@@ -49,6 +49,7 @@ public class Fibonacci {
 
     /**
      * 迭代计算斐波那契数
+     *
      * @param n 整数
      * @return 返回斐波那契数列中第 n 个数
      */

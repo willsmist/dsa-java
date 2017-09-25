@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class BubbleSorterTest {
     @Test
     public void sort() {
-        Sequence_Impl<Integer> s = new Sequence_Impl<>(SequenceUtil.randomSeqWithNoDups(50,15));
+        Sequence_Impl<Integer> s = new Sequence_Impl<>(SequenceUtil.randomSeqWithNoDups(50, 15));
         System.out.println(s);
         BubbleSorter sorter = new BubbleSorter(Comparator.comparing(o -> ((Integer) o)));
         sorter.sort(s);
