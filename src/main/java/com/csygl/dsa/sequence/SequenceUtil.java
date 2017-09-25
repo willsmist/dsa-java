@@ -1,5 +1,7 @@
 package com.csygl.dsa.sequence;
 
+import com.csygl.dsa.stack.ArrayStack;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -113,8 +115,13 @@ public class SequenceUtil {
      *
      * @param s 指定序列
      */
-    @SuppressWarnings("EmptyMethod")
-    public static void reverseByStack(Sequence s) {
-        //TODO
+    public static <E> void reverseByStack(Sequence<E> s) {
+        ArrayStack<E> stack = new ArrayStack<>(s.getSize());
+        for (int i = 0; i < s.getSize(); i++) {
+            stack.push(s.getAtRank(i));
+        }
+        for (int i = 0; i < s.getSize(); i++) {
+            s.replaceAtRank(i, stack.pop());
+        }
     }
 }

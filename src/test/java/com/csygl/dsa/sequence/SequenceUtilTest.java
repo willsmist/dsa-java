@@ -41,4 +41,12 @@ public class SequenceUtilTest {
         SequenceUtil.reverseIter(s);
         System.out.println(s);
     }
+
+    @Test
+    public void reverseByStack() {
+        Sequence_Impl<Integer> s = new Sequence_Impl<>(SequenceUtil.randomSeqWithNoDups(50, 7));
+        System.out.println(s);
+        SequenceUtil.reverseByStack(s);
+        System.out.println(s);
+    }
 }
