@@ -6,7 +6,7 @@ package com.csygl.dsa.queue;
 public class QueueEmptyException extends RuntimeException {
 
     public QueueEmptyException() {
-        this("com.scygl.dsa.queue.QueueEmptyException: queue empyt");
+        this("queue is empyt");
     }
 
     public QueueEmptyException(String msg) {

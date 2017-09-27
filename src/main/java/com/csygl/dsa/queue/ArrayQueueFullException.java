@@ -6,7 +6,7 @@ package com.csygl.dsa.queue;
 public class ArrayQueueFullException extends RuntimeException {
 
     public ArrayQueueFullException() {
-        this("com.csygl.dsa.queue.ArrayQueueFullException: queue full");
+        this("queue is full");
     }
 
     public ArrayQueueFullException(String msg) {

@@ -6,7 +6,7 @@ package com.csygl.dsa.stack;
 public class StackEmptyException extends RuntimeException {
 
     public StackEmptyException() {
-        super("com.csygl.dsa.stack.StackEmptyException: Stack is empty");
+        super("stack is empty");
     }
 
     public StackEmptyException(String msg) {

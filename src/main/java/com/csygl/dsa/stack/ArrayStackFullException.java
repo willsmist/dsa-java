@@ -7,7 +7,7 @@ package com.csygl.dsa.stack;
 public class ArrayStackFullException extends RuntimeException {
 
     public ArrayStackFullException() {
-        super("com.csygl.dsa.stack.ArrayStackFullException: Stack is full");
+        super("stack is full");
     }
 
     public ArrayStackFullException(String msg) {
