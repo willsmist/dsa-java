@@ -21,7 +21,6 @@ public class BubbleSorter implements Sorter {
      * @param s 序列
      */
     @SuppressWarnings("unchecked")
-    @Override
     public void sort(Sequence s) {
         for (int i = 0; i < s.getSize() - 1; i++) {
             for (int j = 0; j < s.getSize() - i - 1; j++) {

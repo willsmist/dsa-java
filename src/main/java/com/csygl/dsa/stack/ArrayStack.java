@@ -1,7 +1,7 @@
 package com.csygl.dsa.stack;
 
 /**
- * 定长数组实现 Stack 接口
+ * 基于定长数组实现 Stack
  *
  * @param <E>
  */

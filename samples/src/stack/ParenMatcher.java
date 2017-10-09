@@ -1,6 +1,7 @@
 package stack;
 
-import com.csygl.dsa.stack.ArrayStack;
+import com.csygl.dsa.stack.SingleLinkedListStack;
+import com.csygl.dsa.stack.Stack;
 
 /**
  * 括号匹配算法
@@ -17,7 +18,8 @@ public class ParenMatcher {
     }
 
     public boolean match(String[] expr) {
-        ArrayStack<String> stack = new ArrayStack<>(expr.length);
+//        Stack<String> stack = new ArrayStack<>(expr.length);
+        Stack<String> stack = new SingleLinkedListStack<>();
         for (String x : expr) {
             if (isLeftParen(x)) {
                 stack.push(x);

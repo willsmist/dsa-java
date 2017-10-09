@@ -1,7 +1,7 @@
 package com.csygl.dsa.stack;
 
 /**
- * 栈 Stack
+ * 栈 ADT 接口
  */
 public interface Stack<E> {
 

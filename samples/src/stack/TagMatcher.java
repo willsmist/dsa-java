@@ -1,6 +1,7 @@
 package stack;
 
-import com.csygl.dsa.stack.ArrayStack;
+import com.csygl.dsa.stack.SingleLinkedListStack;
+import com.csygl.dsa.stack.Stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,7 +28,8 @@ public class TagMatcher {
     }
 
     public boolean checkTags(Tag[] tags) {
-        ArrayStack<Tag> stack = new ArrayStack<>(tags.length);
+//        Stack<Tag> stack = new ArrayStack<>(tags.length);
+        Stack<Tag> stack = new SingleLinkedListStack<>();
         for (int i = 0; i < tags.length && tags[i] != null; i++) {
             if (tags[i].opening) {
                 stack.push(tags[i]);
