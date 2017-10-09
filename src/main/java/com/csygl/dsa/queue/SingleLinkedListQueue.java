@@ -109,12 +109,11 @@ public class SingleLinkedListQueue<E> implements Queue<E> {
         Node p = head;
         while (p != null) {
             if (p.getNext() == null) {
-                System.out.print(p.getElement());
+                System.out.println(p.getElement());
             } else {
                 System.out.print(p.getElement() + ", ");
             }
             p = p.getNext();
         }
-        System.out.println();
     }
 }
