@@ -1,22 +1,23 @@
 package com.csygl.dsa.common;
 
-/**
- * 单链表节点类
- */
-public class Node<E> implements Position<E> {
+public class DeNode<E> implements Position<E> {
 
     //数据元素
     protected E element;
 
-    //当前结点的直接后继节点
-    protected Node<E> next;
+    //当前节点的直接前驱节点
+    protected DeNode<E> prev;
 
-    public Node() {
-        this(null, null);
+    //当前节点的直接后继节点
+    protected DeNode<E> next;
+
+    public DeNode() {
+        this(null, null, null);
     }
 
-    public Node(E element, Node<E> next) {
+    public DeNode(E element, DeNode<E> prev, DeNode<E> next) {
         this.element = element;
+        this.prev = prev;
         this.next = next;
     }
 
@@ -43,11 +44,19 @@ public class Node<E> implements Position<E> {
         return oldElement;
     }
 
-    public Node<E> getNext() {
+    public DeNode<E> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(DeNode<E> prev) {
+        this.prev = prev;
+    }
+
+    public DeNode<E> getNext() {
         return next;
     }
 
-    public void setNext(Node<E> next) {
+    public void setNext(DeNode<E> next) {
         this.next = next;
     }
 }
