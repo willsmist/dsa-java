@@ -5,10 +5,10 @@ package com.csygl.dsa.common;
  */
 public class Node<E> implements Position<E> {
 
-    //数据元素
+    // 数据元素
     protected E element;
 
-    //当前结点的直接后继节点
+    // 当前结点的直接后继节点
     protected Node<E> next;
 
     public Node() {
