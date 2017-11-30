@@ -1,6 +1,6 @@
 package stack;
 
-import com.csygl.dsa.stack.SingleLinkedListStack;
+import com.csygl.dsa.stack.LinkedStack;
 import com.csygl.dsa.stack.Stack;
 
 /**
@@ -19,7 +19,7 @@ public class ParenMatcher {
 
     public boolean match(String[] expr) {
 //        Stack<String> stack = new ArrayStack<>(expr.length);
-        Stack<String> stack = new SingleLinkedListStack<>();
+        Stack<String> stack = new LinkedStack<>();
         for (String x : expr) {
             if (isLeftParen(x)) {
                 stack.push(x);
