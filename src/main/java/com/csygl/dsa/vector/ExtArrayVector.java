@@ -31,14 +31,10 @@ public class ExtArrayVector<E> extends ArrayVector<E> {
         if (n >= cap) {
             cap *= 2;
             Object[] t = new Object[cap];
-            for (int i = 0; i < n; i++) {
-                t[i] = v[i];
-            }
+            System.arraycopy(v, 0, t, 0, n);
             v = t;
         }
-        for (int i = n; i > r; i--) {
-            v[i] = v[i - 1];
-        }
+        System.arraycopy(v, r, v, r + 1, n - r);
         v[r] = e;
         n++;
         return e;

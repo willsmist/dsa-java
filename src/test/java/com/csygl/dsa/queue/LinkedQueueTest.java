@@ -2,11 +2,11 @@ package com.csygl.dsa.queue;
 
 import org.junit.Test;
 
-public class SingleLinkedListQueueTest {
+public class LinkedQueueTest {
 
     @Test
     public void test() throws Exception {
-        SingleLinkedListQueue<String> q = new SingleLinkedListQueue<>();
+        LinkedQueue<String> q = new LinkedQueue<>();
         System.out.println(q.getSize());
         System.out.println(q.isEmpty());
 

@@ -1,21 +1,21 @@
 package com.csygl.dsa.common;
 
-public class DeNode<E> implements Position<E> {
+public class DLNode<E> implements Position<E> {
 
     //数据元素
     protected E element;
 
     //当前节点的直接前驱节点
-    protected DeNode<E> prev;
+    protected DLNode<E> prev;
 
     //当前节点的直接后继节点
-    protected DeNode<E> next;
+    protected DLNode<E> next;
 
-    public DeNode() {
+    public DLNode() {
         this(null, null, null);
     }
 
-    public DeNode(E element, DeNode<E> prev, DeNode<E> next) {
+    public DLNode(E element, DLNode<E> prev, DLNode<E> next) {
         this.element = element;
         this.prev = prev;
         this.next = next;
@@ -44,19 +44,19 @@ public class DeNode<E> implements Position<E> {
         return oldElement;
     }
 
-    public DeNode<E> getPrev() {
+    public DLNode<E> getPrev() {
         return prev;
     }
 
-    public void setPrev(DeNode<E> prev) {
+    public void setPrev(DLNode<E> prev) {
         this.prev = prev;
     }
 
-    public DeNode<E> getNext() {
+    public DLNode<E> getNext() {
         return next;
     }
 
-    public void setNext(DeNode<E> next) {
+    public void setNext(DLNode<E> next) {
         this.next = next;
     }
 }

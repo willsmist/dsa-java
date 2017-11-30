@@ -3,11 +3,11 @@ package com.csygl.dsa.stack;
 import com.csygl.dsa.common.Node;
 
 /**
- * 基于单链表 SingleLinkedList 实现 Stack
+ * 基于单链表实现 Stack
  *
  * @param <E>
  */
-public class SingleLinkedListStack<E> implements Stack<E> {
+public class LinkedStack<E> implements Stack<E> {
 
     //指向栈顶元素
     protected Node<E> top;
@@ -15,7 +15,7 @@ public class SingleLinkedListStack<E> implements Stack<E> {
     //栈中元素的个数
     protected int size;
 
-    public SingleLinkedListStack() {
+    public LinkedStack() {
         top = null;
         size = 0;
     }

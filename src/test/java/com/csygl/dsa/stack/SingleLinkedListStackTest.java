@@ -5,14 +5,14 @@ import org.junit.Test;
 public class SingleLinkedListStackTest {
     @Test
     public void testFields() throws Exception {
-        SingleLinkedListStack<String> stack = new SingleLinkedListStack<>();
+        LinkedStack<String> stack = new LinkedStack<>();
         System.out.println("top=" + stack.top);
 //        stack.traversal();
     }
 
     @Test
     public void testMethods() {
-        SingleLinkedListStack<String> stack = new SingleLinkedListStack<>();
+        LinkedStack<String> stack = new LinkedStack<>();
         stack.push("a");
         stack.traversal();
         stack.push("b");

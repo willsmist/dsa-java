@@ -1,24 +1,24 @@
 package com.csygl.dsa.queue;
 
-import com.csygl.dsa.common.DeNode;
+import com.csygl.dsa.common.DLNode;
 
 /**
  * 基于双向链表实现 Deque
  */
-public class DoubleLinkedListDeque<E> implements Deque<E> {
+public class DoubleLinkedDeque<E> implements Deque<E> {
 
     //指向头节点(哨兵)
-    protected DeNode<E> header;
+    protected DLNode<E> header;
 
     //指向尾节点(哨兵)
-    protected DeNode<E> tailer;
+    protected DLNode<E> tailer;
 
     //队列中元素的个数
     protected int size;
 
-    public DoubleLinkedListDeque() {
-        header = new DeNode<>();
-        tailer = new DeNode<>();
+    public DoubleLinkedDeque() {
+        header = new DLNode<>();
+        tailer = new DLNode<>();
         header.setNext(tailer);
         tailer.setPrev(header);
         size = 0;
@@ -51,7 +51,7 @@ public class DoubleLinkedListDeque<E> implements Deque<E> {
      */
     @Override
     public void insertFirst(E e) {
-        DeNode<E> node = new DeNode<>(e, header, header.getNext());
+        DLNode<E> node = new DLNode<>(e, header, header.getNext());
         header.getNext().setPrev(node);
         header.setNext((node));
         size++;
@@ -64,7 +64,7 @@ public class DoubleLinkedListDeque<E> implements Deque<E> {
      */
     @Override
     public void insertLast(E e) {
-        DeNode<E> node = new DeNode<>(e, tailer.getPrev(), tailer);
+        DLNode<E> node = new DLNode<>(e, tailer.getPrev(), tailer);
         tailer.getPrev().setNext(node);
         tailer.setPrev(node);
         size++;
@@ -137,7 +137,7 @@ public class DoubleLinkedListDeque<E> implements Deque<E> {
      */
     @Override
     public void traversal() {
-        DeNode<E> p = header.getNext();
+        DLNode<E> p = header.getNext();
         while (p != tailer) {
             if (p.getNext() == tailer) {
                 System.out.println(p.getElement());

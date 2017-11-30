@@ -5,7 +5,7 @@ import com.csygl.dsa.common.Node;
 /**
  * 基于单链表 SingleLinkedList 实现 Queue
  */
-public class SingleLinkedListQueue<E> implements Queue<E> {
+public class LinkedQueue<E> implements Queue<E> {
 
     //指向首节点
     protected Node<E> head;
@@ -16,7 +16,7 @@ public class SingleLinkedListQueue<E> implements Queue<E> {
     //队列中元素的个数
     protected int size;
 
-    public SingleLinkedListQueue() {
+    public LinkedQueue() {
         head = null;
         tail = null;
         size = 0;
