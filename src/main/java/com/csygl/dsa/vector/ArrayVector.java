@@ -98,6 +98,7 @@ public class ArrayVector<E> implements Vector<E> {
         if (n >= N) {
             throw new VectorRankOutOfBoundsException("array index out of bounds");
         }
+        //noinspection ManualArrayCopy
         for (int i = n; i > r; i--) {
             v[i] = v[i - 1];
         }
@@ -119,9 +120,7 @@ public class ArrayVector<E> implements Vector<E> {
             throw new VectorRankOutOfBoundsException(r + "");
         }
         E element = elementData(r);
-        for (int i = r; i < n; i++) {//此处并不是 i < n-1
-            v[i] = v[i + 1];//当 i 为 n-1 时,v[n-1]=v[n]表示将 v[n-1] 置为 null, 也就是 v[n] 的值
-        }
+        System.arraycopy(v, r + 1, v, r, n - r);
         n--;
         return element;
     }
